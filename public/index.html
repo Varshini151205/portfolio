@@ -1,43 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bobbala Varshini - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+<body>
+    <header>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+        <div class="container">
+            <h1>Bobbala Varshini</h1>
+            <p class="tagline">Full Stack Developer | Creative Problem Solver</p>
+            <!-- 🌐 Social Links -->
+            <div class="social-links">
+                <a href="https://github.com/Varshini151205" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/bobbala-varshini-8426a3325" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:bobbalavarshini1512@gmail.com" target="_blank" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+
+            <!-- 📄 Download Resume Button -->
+            <div class="resume-download">
+                <a href="Varshini_Resume.pdf" target="_blank" class="btn">
+
+                    <i class="fas fa-download"></i> Download Resume
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="resume" class="section">
+            <div class="container">
+                <h2>My Resume</h2>
+                <div class="resume-controls">
+                    <button data-section="about" class="resume-tab active">About me</button>
+                    <button data-section="education" class="resume-tab">Education</button>
+                    <button data-section="projects" class="resume-tab">Projects</button>
+                    <button data-section="achievements" class="resume-tab">Achievements</button>
+                </div>
+
+                <div id="resumeContent" class="resume-content">
+                    <!--about me-->
+                    <div data-content="about" class="content active">
+    <h3>About Me</h3>
+    <p>
+        I am a dedicated and enthusiastic student currently pursuing my undergraduate studies in Information Technology 
+        at Chaitanya Bharathi Institute of Technology. I have a keen interest in emerging technologies and continuously
+         seek to upgrade my skills through practical projects, internships, and online certifications. 
+         I am passionate about learning, innovation, and contributing to India's technological growth.</p>
+</div>
+
+
+                    <!-- Education Section -->
+                    <div data-content="education" class="content active">
+                      
+                        <h3>Education</h3>
+                        <ul class="education-list">
+                            <li class="education-card">
+                                  
+                                <strong>SSC (Secondary School Certificate)</strong>
+                                <p>Naagarjuna High School — 2021</p>
+                            </li>
+                            <li class="education-card">
+                                
+                                <strong>Diploma in Computer Science and Engineering</strong>
+                                <p>Sanjay Gandhi Memorial Government Polytechnic — 2021-2024</p>
+                                <p>Relevant coursework: C, C++, Java, Data Structures, OS, Computer Hardware and Networks, Python, Web Designing</p>
+                            </li>
+                            <li class="education-card">
+                                
+                                <strong>B.Tech in Information Technology</strong>
+                                <p>Chaitanya Bharathi Institute of Technology — 2024-2027</p>
+                                <p>Relevant coursework: Data Structures, Algorithms, Web Development, Machine Learning, DBMS, OS, Computer Networks, Java</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Projects Section -->
+                    <div data-content="projects" class="content active ">
+                        <h3>Projects</h3>
+                        <ul class="projects-list">
+
+                            <li class="project-card">
+    <div class="project-header">
+        <span class="project-dot"></span>
+        <h2 class="project-title">Homemaker Finder – Cuisine Based</h2>
+    </div>
+
+    <!-- Short description always visible -->
+    <div class="project-description">
+        <p>A platform connecting homemakers with users who want homemade, hygienic, traditional food. Features include user authentication, menu display, and order management.</p>
+    </div>
+
+    <div class="tech-section">
+        <h3 class="tech-heading">Technologies Used</h3>
+        <ul class="project-details">
+            <li><span class="tech-label">Frontend:</span> React.js, HTML, CSS, JavaScript</li>
+            <li><span class="tech-label">Backend:</span> Node.js, Express.js</li>
+            <li><span class="tech-label">Database:</span> MongoDB</li>
+        </ul>
+        <div class="tech-tags">
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">Express</span>
+            <span class="tech-tag">MongoDB</span>
+            <span class="tech-tag">JavaScript</span>
+        </div>
+    </div>
+</li>
+
+
+
+                            <li class="project-card">
+                                <div class="project-header">
+                                    <span class="project-dot"></span>
+                                    <h2 class="project-title">Blood Bank Management System</h2>
+                                </div>
+                                 <div class="project-description">
+        <p> Web application to manage blood donors, blood inventory, and requests efficiently. 
+                                Allows seamless registration, tracking, and database management for blood banks.</p>
+    </div>
+                                <div class="tech-section">
+                                    <h3 class="tech-heading">Technologies Used</h3>
+                                    <ul class="project-details">
+                                        <li>
+                                            <span class="tech-label">Frontend:</span>
+                                            <span class="tech-value">HTML, CSS, JavaScript</span>
+                                        </li>
+                                        <li>
+                                            <span class="tech-label">Backend:</span>
+                                            <span class="tech-value">Node.js</span>
+                                        </li>
+                                        <li>
+                                            <span class="tech-label">Database:</span>
+                                            <span class="tech-value">MySQL</span>
+                                        </li>
+                                    </ul>
+                                    <div class="tech-tags">
+                                        <span class="tech-tag">HTML5</span>
+                                        <span class="tech-tag">CSS3</span>
+                                        <span class="tech-tag">Node.js</span>
+                                        <span class="tech-tag">MySQL</span>
+                                        <span class="tech-tag">JavaScript</span>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <!-- Portfolio Project -->
+<li class="project-card">
+    <div class="project-header">
+        <span class="project-dot"></span>
+        <h2 class="project-title">Personal Portfolio Website</h2>
+    </div>
+    <div class="project-description">
+        <p>
+            A personal portfolio website showcasing my skills, projects, resume, and contact information. 
+            Features include responsive design, smooth scrolling, and interactive sections for a professional presentation.
+        </p>
+    </div>
+    <div class="tech-section">
+        <h3 class="tech-heading">Technologies Used</h3>
+        <ul class="project-details">
+            <li><span class="tech-label">Frontend:</span> HTML, CSS, JavaScript</li>
+            <li><span class="tech-label">Design:</span> Responsive Layout, Flexbox, Grid</li>
+            <li><span class="tech-label">Tools:</span> VS Code, GitHub Pages, Formspree</li>
+        </ul>
+        <div class="tech-tags">
+            <span class="tech-tag">HTML5</span>
+            <span class="tech-tag">CSS3</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">Responsive Design</span>
+            <span class="tech-tag">GitHub Pages</span>
+        </div>
+    </div>
+</li>
+
+
+                        </ul>
+                    </div>
+
+                    <!-- Achievements Section -->
+                    <div data-content="achievements" class="content active">
+    <h3>Achievements</h3>
+    <ul class="card-list">
+        <li class="card">
+            <i class="fas fa-trophy card-icon"></i>
+            <strong>Smart India Hackathon 2024 Finalist</strong>
+        </li>
+        <li class="card">
+            <i class="fas fa-trophy card-icon"></i>
+            <strong>MongoDB Associate Developer</strong>
+        </li>
+    </ul>
+</div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Contact me</h2>
+                <form id="contactForm" class="contact-form" action="https://formspree.io/f/xvgwqypp"
+  method="POST">
+                    <label>
+                        <span>Name</span>
+                        <input type="text" name="name" required>
+                    </label>
+                    <label>
+                        <span>Email</span>
+                        <input type="email" name="email" required>
+                    </label>
+                    <label>
+                        <span>Message</span>
+                        <textarea name="message" rows="5" required></textarea>
+                    </label>
+                    <button type="submit" class="btn">Send Message</button>
+                    <p id="formStatus" class="form-status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            © <span id="year"></span> Bobbala Varshini — Built with ❤️
+        </div>
+    </footer>
+
+</body>
 </html>
